@@ -1,0 +1,62 @@
+html {
+  font-size: 24px;
+}
+
+body{
+
+
+  /* font-family : 글꼴을 지정하는 속성 */
+  /* font-family : "Gasoek One", sans-serif; */
+  font-family: "맑은 고딕", "바탕","궁서체";
+  /*  font-weigth : 글자 굵기 조절하는 속성 (100 → 900) 점점 더 굵어짐 */
+  font-weight: 400;
+  font-style: normal;
+
+  /* font-size : 글자 크기를 지정하는 속성 */
+  /* px : 픽셀 단위로 폰트 크기를 조정 기본: 16px */
+  /* em : 부모 요소 기준으로 글자 크기를 배율로 조절 */
+  /* rem : 최상위 요소를 기준으로 글자 크기를 배율로 조절 */
+  font-size: 1.5rem;
+}
+
+p {
+  /* color : 폰트 색상 설정 */
+  color: 
+  #d03e3e80; 
+  /* hex는 16진수이다 1-9 +a,b,c,d,e,f ...뒤에 6자리까지 나타냄, 뒤에 두자리는 투명도임. */
+ 
+  color: hsl(0, 30%, 80%);
+
+  /* text-align : 텍스트의 정렬 방향 지정 */
+  text-align: center;
+  }
+
+p {
+
+  /* text-decoration : 선으로 텍스트를 꾸미는 속성 */
+text-decoration : line-through
+}
+
+.box-line-height {
+ background-color: rgb(116, 72, 7);
+ height: 120px;
+ /*  line-height : 줄 간격 조절 */
+ line-height: 40px;
+ /* letter-spacing : 자간 조절 */
+ letter-spacing: 5px;
+ /* word spacing : 단어 간의 간격 조절=띄어쓰기 */
+ word-spacing: 5%;
+
+}
+ 
+.class-text-transform {
+  /* text-transform : 한국어 사용 X, 영어 대소문자 출력 변환 속성 */
+  text-transform:lowercase;
+
+  /* text-shadow : 글자의 그림자 부여하는 속성 */
+  /*  각 픽셀이 의미하는 것. 1. 가로위치 2. 세로위치 3. 그림자 크기 4.색상 */
+  text-shadow: -20px 20px 50px red;
+}
+
+
+
