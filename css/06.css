@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* body {
+    padding: 10px; } */
+
+.A {
+  color: #7e2e2e;
+}
+
+.A-1 {
+  color: #b3ff0f;
+}
+
+
+
+.div-parent {
+   width: 50px;
+   height: 200px;
+   padding: 100px 100px 100px 100px;
+   margin: 20px auto;
+   border: 1px solid #4344;
+
+}
+
+.divi {
+ border: 1px solid #e622aeea;
+ width: 342;
+}
+
+
+.div {
+    border:  1px solid #000;
+    width: 200px;
+}
+
+.div-box, h1 {
+    border:  1px solid #7e2e2e;
+    width:  200px;
+}
+
+
+span {
+    display: inline-block; 
+    width: 100vw;
+    height: 50vh;
+    padding: 5px;
+    
+}
+
+/* 뷰포트 기준 단위: vw,vh : 뷰의 크기에 따라 비율로 설정되는 단위 */
+/* % : 부모요소의 크기에 따라 비율로 설정되는 단위 */
+
+
+.div-child {
+
+    border: 1px solid #b3ff0f;
+    width: 50vw;
+    min-width: 400px;
+    margin: 100px;
+}
+
+.div-margin {
+    margin: 40px;
+    background-color: antiquewhite;
+    text-align: center;
+
+    /* 수평거리, 수직거리, 흐림정도, 번짐정도, 색상, 그림자 방향 */
+    box-shadow: 5px 5px 10px 1px #1345 inset;
+}
+
+
+/* 블럭 레벨 요소 문제 : 
+   혼자 한 줄 다 차지 한다.
+   크기를 조절해서 위로 올라갈 공간이 충분할 거 같은데 안한다. 
+   크기 조절은 가능하다 */
+
+/* 인라인 레벨 요소 문제 :
+   콘텐츠 크기 만큼만 크기가 고정된다
+   크기 조절이 안됨 높이, 가로 둘 다 안 됨
+   공간이 충분하면 위로 올라온다 */
