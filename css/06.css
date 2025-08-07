@@ -8,29 +8,31 @@
 /* body {
     padding: 10px; } */
 
-.A {
-  color: #7e2e2e;
-}
-
 .A-1 {
   color: #b3ff0f;
 }
 
 
+.A {
+  color: #7e2e2e;
+}
+
+
+.divi {
+ border: 1px solid #923c7aea;
+ width: 10;
+}
+
 
 .div-parent {
-   width: 50px;
+   width: 10px;
    height: 200px;
    padding: 100px 100px 100px 100px;
-   margin: 20px auto;
+   margin: 2px auto;
    border: 1px solid #4344;
 
 }
 
-.divi {
- border: 1px solid #e622aeea;
- width: 342;
-}
 
 
 .div {
@@ -79,7 +81,7 @@ span {
    크기를 조절해서 위로 올라갈 공간이 충분할 거 같은데 안한다. 
    크기 조절은 가능하다 */
 
-/* 인라인 레벨 요소 문제 :
+/* 인라인 레벨 요소 문제 : like span
    콘텐츠 크기 만큼만 크기가 고정된다
    크기 조절이 안됨 높이, 가로 둘 다 안 됨
    공간이 충분하면 위로 올라온다 */

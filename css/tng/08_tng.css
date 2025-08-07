@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+  width: 1000px;
+  height: 1000px;
+  margin: auto;
+  background-color: antiquewhite;
+}
+
+.div-static {
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    height: 500px;
+    position: static;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.div-relative {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.position1 {
+    position: absolute;
+    width: 150px;
+    height:150px;
+    top: 20px; left: 10%;
+    background-color: pink;
+    border: 1px solid black;
+}
+
+.position2 {
+    width: 150px;
+    height:150px;
+    border: 1px solid black;
+    background-color: pink;
+}
+
+.position3 {
+    position: absolute;
+    width: 150px;
+    height:150px;
+    right: 20%; top: 43px;
+    border: 1px solid black;
+    background-color: pink;
+}
+
+.div-fixed {
+    position: fixed;
+    left: 47%; top: 45%;
+}

@@ -1,0 +1,163 @@
+/* * {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.title-parent {
+    width: 800px;
+    height: 200px;
+    background-color: black;
+}
+
+
+.full {
+    margin: 30px auto;
+    text-align: center;
+}
+
+
+.title-child {
+    font-size: 40px;
+    color: white;
+}
+
+
+.title {
+    width: 1000px;
+    border : 2px solid black;
+    color: white;
+    
+}
+
+.apple {
+    font-size: 20px;
+    color: orange;
+    line-height: 30px;
+
+}
+
+.box {
+
+    box-shadow: inset;
+    width: 100vw;
+    height: 50vh;
+    padding: 5px;
+    
+}
+
+.left {
+    width: 800px;
+    text-align: left;
+    color: white;
+    border: 1px solid black;
+}
+
+.color {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+
+}
+
+.color2 {
+  font-size: 19px;
+  font-weight: bold;
+  color: rgb(4, 0, 255);
+}
+
+.title-parent2 {
+     width: 800px;
+     height: 30px;
+    border : 2px solid black;
+    color: white;
+    background-color: black;
+    
+    
+}
+
+#center {
+    display: block
+    : auto;
+}
+
+.line {
+    border: 2px solid black;
+} */
+
+/* 실습 */
+
+
+
+
+
+
+/* basic setting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: black;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+.header-info {
+    color: orange;
+}
+
+/* main */
+.main-title {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.main-box-base {
+   padding: 20px;
+   border: 1px solid rgb(179, 162, 162);
+   text-align: center;
+}
+
+.main-contents {
+
+}
+
+.main-counsel {
+
+}
+
+.main-sub-title {
+    color: red;
+    margin bottom: 20px ;
+   
+}
+
+.main-word-highlight {
+ color: blue;  
+}
+
+.main-contents-big-bold {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.main-contents-margin-bottom {
+    margin-bottom: 20px;
+}
