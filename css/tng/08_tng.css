@@ -6,7 +6,7 @@
   width: 1000px;
   height: 1000px;
   margin: auto;
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
 }
 
 .div-static {
@@ -20,7 +20,7 @@
 }
 
 .div-relative {
-  background-color: rgb(255, 255, 255);
+  background-color: hwb(0 19% 70%);
   position: relative;
 }
 

@@ -1,0 +1,122 @@
+/* 고급 선택자 */
+
+/* 고급 선택자 장점 : 화면이 느리다. 속도가 느리다? 코드 문제, 로직이 완벽? -> js과다사용 문제 일수 ㅇㅇ ->how? 고급선택자로 바꿔줘야함  */
+/* react를 쓰면 고급 선택자 별로 필요 없음. js, react 쓰면 바로 그냥 class 가능 */
+/* event = 유저가 사용하는 것들 e.g. 클릭, 선택, 입력 ect.... */
+/* 너무 많이 알면 머리아픔 헷갈림 보통 사용하는거? - 후손 결합자, 자식 결합자, 가상 선택자-linked, or visited 상태 지정하는 것, */
+
+/* 고급 선택자 종류 */
+
+/* 1. 후손 결합자 : 부모 요소(나)의 영역하에 있는 요소 선택 */
+/* '공백'을 구분자로 요소를 선택 */
+header span {
+    color: red
+}
+
+/* 2. 자식 결합자 : 부모 요소의 영역하에 있는 자식 요소만 오직 선택, 자손 선택 x */
+/* '>'를 구분자로 요소를 선택 */
+
+header>span {
+    color: blue;
+}
+
+header > div > span {
+    color: yellow;
+}
+
+/* 3. 인접 형제 결합자 : 첫번째 선택자 요소 바로 뒤에 나오는 형제 요소를 선택 */
+/* '+'를 구분자로 요소 선택 */
+
+header+span {
+    color: green;
+}
+
+/* 4. 일반 형제 결합자 : 첫번째 선택자 요소 이후에 나오는 모든 형제 요소를 선택 */
+/* '~'를 구분자로 요소 선택 */
+
+header~ p {
+    color:  purple;
+}
+
+/* 속성 선택자 (잘 사용 X) : 요소의 속성을 이용하여 특정 요소를 선택 */
+/* [속성명] : 특정 속성이 있는 요소를 선택
+[href] {
+    font-size: 10px;
+} */
+
+
+
+
+
+
+/* "가상 선택자" (애는 좀 사용함) : 요소의 상태에 따라 요소를 선택 */
+/* if A tag,=방문 전과 후가 다름, 또는 마우스를 올렸을 때 변화,포커스,, 커서 깜빡 깜빡, 체크박스.....ect  */
+/* 선택자(:'콜론')가상클래스명(정해져 있음 호버,, 등등 상태마다 존재) <-기본 형태 */
+
+/* link: 아직 방문하지 않은 링크 요소 선택 */
+a:link {
+  color:pink
+  } 
+
+/* visited ; 방문한 요소 선택 */
+a:visited {
+    color:green
+}
+
+/* hover : 마우스 커서가 올라가 있는 요소 선택 */
+ a:hover {
+    font-size: 1.5rem;
+ }
+
+ /* active : 클릭 중인 요소를 선택 */
+ a:active {
+    background-color: red;
+ }
+
+ /* focus : 포커스가 적용되어 있는 요소 선택 */
+input {
+    outline: violet;
+}
+ input:focus {
+    border: 3px double rgb(112, 5, 112)
+ }
+
+ /* checked: 체크된 상태의 요소를 모두 선택 */
+ input:checked + label {
+    background-color: antiquewhite;
+ }
+
+ /* not(선택자) : '()'의 선택자 요소를 제외한 나머지 요소에 스타일을 적용 */
+
+ header :not(span) {
+   text-decoration: underline;
+ }
+
+ /* nth-child(숫자) : 숫자번째의 자식 요소를 선택
+ .container :nth-child(2) {
+    background-color: aqua;
+ }
+
+ /* nth-child(n+숫자): 숫자번째의 자식 요소부터 선택 */
+ /* .container :nth-child(n+3) {
+    background-color: rebeccapurple;
+ } */
+
+  /* nth-child(-n+숫자): 숫자번째의 자식 요소 이전을 선택
+ .container :nth-child(-n+3) {
+    background-color: rebeccapurple;
+ } */
+/* 
+ .container :nth-child(n+3):nth-child(-n+5) {
+    background-color: brown;
+ } */
+
+ /* nth-child(odd | even) : 자식 요소 중 홀수 또는 짝수번째 요소 선택 */
+ .container :nth-child(odd) {
+    color: blueviolet;
+ }
+
+ /* 선택자:nth-of-type(숫자): 자식 요소 중 선택자에 해당하는 요소 중 숫자 번째 요소 선택 */
+ .container h3:nth-of-type(2) {
+    background-color: brown;
+ }

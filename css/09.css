@@ -1,0 +1,42 @@
+.background-test1 {
+    padding: 10px;
+    background-color:rgb(120, 120, 216);
+    border: 3px dotted #454354;
+    background-clip:content-box;
+}
+
+.div-bg-img {
+    width: 1000px;
+    height: 1000px;
+    border: 3px solid black;
+
+    /*  배경 이미지 크기 조절 */
+    background-size: cover; 
+   
+    /* 배경 이미지의 반복 조절 방법 */
+    background-repeat: no-repeat;
+   
+    /* 배경 이미지 위치를 조절 */
+    background-position: top 0  right 0;
+   
+   /* 배경을 이미지로 지정 */
+   background-image: url('../img/icons8-쿠버네티스-480.png')
+}
+
+body {
+    background-image: url('../img/icons8-쿠버네티스-480.png');
+    /* 스크롤이 생길경우 요소의 배경 이미지를 고정 */
+    background-attachment:fixed;
+}
+
+.div-gradation {
+        width: 500px;
+        height: 500px;
+        /* 선형 그라데이선 */
+        /* background: linear-gradient */
+
+        background: linear-gradient(90deg, black 5%, red);
+
+        /* 원형 그라데이션 */
+        background: radial-gradient(circle at 0% 50%, rgb(123, 44, 44), pink 20% red);
+}
