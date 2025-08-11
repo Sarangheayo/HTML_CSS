@@ -1,0 +1,175 @@
+/* * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.IWY {
+    color: rgb(183, 17, 17);
+    border-style: solid;
+
+}
+
+.name {
+    
+}
+
+.age {
+   
+}
+
+.gender-margin {
+    text-decoration: line-through; color: rgb(0, 0, 0);
+}
+
+.qseudo ::after {
+ content: '*';
+ background-color: white;
+ list-style: none;
+ opacity: 20%;
+}
+
+.requested-content {
+    width: 200px;
+    height: 100px;
+    border-style: solid;
+    padding-top: -100px;
+    opacity: 50%;
+    margin-top: 10px
+}
+
+.gender-mergin::before {
+   content: '*';
+   color:red;
+}
+
+
+
+/* .bg {
+    background-image: url(../../img/i\ want\ you!.jpg);
+    background-repeat: no-repeat;
+    background-size:500px 500px;
+    margin:20vw;
+    border-style: solid;
+    opacity: 10%;
+} */
+
+/* .bg {
+    border: 1px solid black;
+    width: 480px;
+    height: 380px;s
+} */
+
+/* .size {
+    margin-top: 50px;
+} */
+
+/* .field > .qseudo:focus {
+ outline: none;
+ border: 3px solid red;
+} */
+
+/* .field {
+    width: 400px;
+    height: 400px;
+    background-image: url(../../img/Donald-Trump.png);
+    background-repeat: no-repeat;
+    background-size:500px 500px; 
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid black;
+    background-color: white;
+
+}
+
+.input-c + label {
+   color: red;
+}
+
+.size {
+    position: relative;
+    bottom:140px;
+}  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.fieldset-bg-img {
+    position: relative;
+    background-position: center;
+}
+
+.fieldset-bg-img::after {
+    background-image: url(../../img/Donald-Trump.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    z-index: -1;
+} 
+
+.legend-title {
+    color: magenta;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.required-sign::before {
+     content:"*" ;
+     color: red;
+}
+
+.input-box {
+    margin-bottom: 10px;
+}
+
+.txa-requestMemo {
+    width: 200px;
+    height: 120px;
+}
+
+label {
+    vertical-align: top;
+}
+
+input, textarea {
+    opacity: 50%;
+} 
+.focus-border:focus {
+    border: 3px solid red;
+    outline: none;
+}
+
+.chk-color:checked + label {
+    color: red;
+}
+
+.btn-submit {
+    position: relative;
+}
+
+.btn-submit:hover::after {
+    content: '내용을 다시 한 번 확인해 주세요.';
+    position: absolute;
+    width: 210px;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    top: 0;
+    left: 60px;
+}

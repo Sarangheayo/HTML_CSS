@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_tng</title>
+    <link rel="stylesheet" href="./11.tng.css">
+</head>
+<body>
+  <form action="">
+    <fieldset class="field">
+         <legend style="color:pink; font-weight: 900;">I want YOU!</legend>
+            <div>
+                <label for="name" class="qseudo">이름</label>
+                <input class="input-bg" type="text" name="name" id="name" required>
+                <br> 
+                <label for="number" class="qseudo" >나이</label>
+                <input type="number" name="number" id="number" required>
+                <br>
+                <div class="gender-margin" class="gender-mergin"></div>
+                <br>
+                <span>성별</span>
+                <input type="radio" name="man" value="woman" required>
+                <label for="woman">여자</label>
+
+                <input type="radio" name="man" value="man" >
+                <label for="man">남자</label>
+                <br>
+                <span class="size">요청사항</span>
+                <label for="yogu"></label>
+                <textarea name="yogu" id="yogu" cols="20" rows="10" placeholder= "요청사항입력"></textarea> 
+             
+             <input type="" class="requested-content" placeholder="요청 사항 입력" ></label> 
+                </span>
+                <br><br><br>
+                <button type="submit">보내기</button>
+                <br>
+            </div>         
+    </fieldset>
+  </form>
+
+<body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_tng</title>
+    <link rel="stylesheet" href="./11.tng.css">
+</head>
+<body>
+    <form action="">
+       <fieldset class="fieldset-bg-img">
+          <legend class="legend-title">I want YOU!</legend>
+
+          <div class="input-box">
+           <label for="name" class="required-sign">이름</label >
+           <input class="focus-border" type="text" name="name" id="name" required>
+          </div>
+          <div class=input-box>
+           <label for="age" class="required-sign">나이</label>
+           <input class="focus-border" type="number" name="age" id="age" min="20" required>
+          </div>
+
+          <div class=input-box>
+            <span class="required-sign">성별</span>
+            <input type="radio" class="chk-color" name="gender" id="man" required>
+            <label for="man">남자</label>
+            <input type="radio" class="chk-color" name="gender" id="woman">
+            <label for="woman">여자</label>
+          </div>
+          <div class=input-box>
+            <label for="requestMemo">요청사항</label>
+            <textarea class="txa-requestMemo focus-border" name="requestMemo" id="requestMemo" placeholder="요청사항 입력"></textarea>
+          </div>
+          <br>
+          <button type="submit" class="btn-submit">보내기</button>
+       </fieldset>
+       
+
+    </form>
+    
+</body>
+</html>

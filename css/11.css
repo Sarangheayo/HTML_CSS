@@ -1,0 +1,7 @@
+
+/* 가상요소 :클래스로 하나씩 스판 태그로 감싸서 작성 가능 . *(red) */
+.required-sign::after {
+  content: '*';
+  color: red;
+}
+
