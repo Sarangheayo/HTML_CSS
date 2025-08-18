@@ -1,0 +1,288 @@
+<!-- HTML
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_grid</title>
+    <link rel="stylesheet" href="./01_grid.css">
+</head>
+<body>
+    <div class="container">
+       <div class="header">
+         <h1>YOU THIRSTY?</h1>
+         <div class="header-content">Explore local breweries with just one click and stirred by starlight across the centuries light years great turbulent clouds circumnavigated paroxysm of global death.</div>
+         <button type="button" class="header-btn"><a href="http://127.0.0.1:5500/mavel/index.html">browse breweries</a></button>
+       </div>
+       <div class="main">
+         <div class="item">첫번째 사진</div>  
+         <div class="item">두번째 사진</div>  
+         <div class="item">세번째 사진</div>  
+         <div class="item">네번째 사진</div>  
+         <div class="item">다섯번째 사진</div>
+       </div>
+       <div class="foot-fix">© 2021. GREEN COMPUTER ART ACADEMY DAEGU</div>
+    </div>
+</body>
+</html>
+
+
+<div class="item-1" >  
+                 <div class="item-img" style="background-image: url(./img/item_1.jpg);"></div>
+                 <h3 id="gotoBrowse">Billions upon billions</h3>
+                 <p>Made in the interiors of collapsing stars star stuff harvesting star light venture billions upon billions Drake Equation brain is the seed of intelligence?</p>
+                 <button type="submit" class="main-item-btn"><a href="#top">Visit Weebsite</a></button>
+                </div> -->
+
+
+-----------------------------------------------------------my code-------------------------------------------------------------------------------
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #daa520;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif ;
+    width: 100vw;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 10rem;
+}
+
+/* header */
+
+.AD {
+    background-image: url(./img/img_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 3rem;
+    /* grid-template-columns: repeat(auto-fit, ); */
+}
+
+.AD-title {
+    width: 49%;
+    height: 100%;
+}
+
+.AD-title > span {
+    color: #ffffff;
+    justify-content: center;
+    line-height: 11.5rem;
+    font-size: 3rem;
+    font-weight: 900;
+    background-color: none;
+}
+
+.AD-content-set {
+   width: 49%;
+   height: 100%;
+}
+
+.AD-content {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;  
+    width: 100%;
+    margin : 3rem 0.5rem;
+}
+
+.AD-btn {
+    align-self: center;
+    background-color: goldenrod;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 170px;
+    border-radius: 3px;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+
+/* body */
+.main {
+    width: 100%;
+    height: 50%;
+    padding: 2.4rem;
+}
+
+.item-box {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.5rem;
+   
+}
+
+.item {
+    border: 1px solid gray;
+    border-radius: 3px;
+    width: 15rem;
+    height: 20rem;
+}
+
+.item-img {
+  padding: 0.8rem;
+  width: 100%;
+  height: 100%;
+}
+
+.image-box {
+   width: 100%;
+   height: 60%;
+   position: relative;
+}
+
+.image-box > h3 {
+    background-color: hsla(0, 0%, 0%, 0.8);
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-weight: 900;
+}
+
+.image-box > img {
+    height: 100%;
+    width: 100%;
+}
+
+.item-img > p {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.item > button {
+    width: 100%;
+}
+
+.main-item-btn {
+    align-self: center;
+    background-color: #e2b007;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 3px;
+    padding: 0.4rem;
+}
+
+/* footer */
+
+.footer {
+   width: 100%;
+   height: 6%;
+   position: fixed; bottom: 0;
+}
+
+.foot-fixed {
+  font-size: 80%;
+  color: rgb(255, 255, 255);
+  background-color: #343232;
+  border: 1px solid #343232;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+----------------------------------------------------------CSS----------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index_choi seol ah</title>
+    <link rel="stylesheet" href="./reference.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+ <style> html {scroll-behavior:smooth} </style>
+</head>
+<body>
+    <div class="container">
+      <div class="AD">
+         <div class="AD-title"><span>You thirsty?</span></div>
+         <div class="AD-content-set">
+             <div class="AD-content">Explore local breweries with just one click and stirred by starlight across the centuries light years great turbulent clouds circumnavigated paroxysm of global death.</div>
+             <button type="button" class="AD-btn"><a href="#">browse breweries</a></button>
+         </div>
+      </div>
+      <div class="main">
+          <div class="item-box">
+                <div class="item">
+                     <div class="item-img">
+                        <div class="image-box">
+                           <h3>Billions upon billions</h3><img src="./img/item_1.jpg" alt="img-1"></div>
+                        <p>Made in the interiors of collapsing stars star stuff harvesting star light venture billions upon billions Drake Equation brain is the seed of intelligence?</p>
+                        <button type="submit" class="main-item-btn"><a href="#top">Visit Website</a></button>
+                    </div>  
+                </div>
+               
+                 <div class="item">
+                     <div class="item-img">
+                        <div class="image-box">
+                           <h3>Drake Equation</h3><img src="./img/item_2.jpg" alt="img-1"></div>
+                        <p>Another world citizens of distant epochs from which we spring descended from astronomers Orion'ssword shores of the cosmic ocean.</p>
+                        <button type="submit" class="main-item-btn"><a href="#top">Visit Website</a></button>
+                    </div>  
+                </div>
+
+                 <div class="item">
+                     <div class="item-img">
+                        <div class="image-box">
+                           <h3>Vast cosmic arena</h3><img src="./img/item_3.jpg" alt="img-1"></div>
+                        <p>Galaxies the ash of stellar alchemy prime number science inconspicuous motes of rock and gas brain is the seed of intelligence.</p>
+                        <button type="submit" class="main-item-btn"><a href="#top">Visit Website</a></button>
+                    </div>  
+                </div>
+
+                 <div class="item">
+                     <div class="item-img">
+                        <div class="image-box">
+                           <h3>Wall Painting, VUOTO Project</h3><img src="./img/item_4.jpg" alt="img-1"></div>
+                        <p>We can finally share our work made for Vuoto project in Altomonte, one of the most beautiful experiences of our life.</p>
+                        <button type="submit" class="main-item-btn"><a href="#top">Visit Website</a></button>
+                    </div>  
+                </div>
+
+                 <div class="item">
+                     <div class="item-img">
+                        <div class="image-box">
+                           <h3>The Peregrine Falcons</h3><img src="./img/item_5.jpg" alt="img-1"></div>
+                        <p>They are machines, alive and powerful.Their lines are inspired by those of the Urwerk watches: sharp and fluid. They are not specifically mechanical birds,</p>
+                        <button type="submit" class="main-item-btn"><a href="#top">Visit Website</a></button>
+                    </div>  
+
+                </div>
+          </div>
+      </div>
+    </div>
+     <div class="footer"><div class="foot-fixed">© 2021. GREEN COMPUTER ART ACADEMY DAEGU</div></div>
+     
+</body>
+</html>
